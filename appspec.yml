@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/ustraa
+hooks:
+  ApplicationStop:
+    - location: codeDeployScripts/stop_node_application.sh
+  ApplicationStart:
+    - location: codeDeployScripts/start_node_application.sh
