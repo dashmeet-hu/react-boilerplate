@@ -6,7 +6,5 @@ files:
 hooks:
   ApplicationStop:
     - location: codeDeployScripts/stop_node_application.sh
-      runas: ubuntu
   ApplicationStart:
     - location: codeDeployScripts/start_node_application.sh
-      runas: ubuntu
