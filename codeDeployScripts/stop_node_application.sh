@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo su
+#sudo su
 cd /var/www/html/ustraa
 
 pm2 stop ustraa
-exit
+#exit
