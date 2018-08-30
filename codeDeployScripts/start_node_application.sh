@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo su
 cd /var/www/html/ustraa
 
 rm -rf node_modules
@@ -10,3 +11,4 @@ nvm use 8.11.3
 npm install
 
 pm2 start ustraa
+exit
