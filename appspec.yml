@@ -7,7 +7,5 @@ hooks:
   ApplicationStop:
     - location: codeDeployScripts/change_to_superuser.sh
     - location: codeDeployScripts/stop_node_application.sh
-      runas: ubuntu
   ApplicationStart:
     - location: codeDeployScripts/start_node_application.sh
-      runas: ubuntu
