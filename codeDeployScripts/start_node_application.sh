@@ -2,6 +2,7 @@
 
 #sudo su
 cd /var/www/html/ustraa
+chmod -R 777 .
 
 rm -rf node_modules
 rm -rf package-lock.json
