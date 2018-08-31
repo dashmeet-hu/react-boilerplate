@@ -13,10 +13,10 @@
   "author": "Max Stoiber",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=development node server",
+    "start": "cross-env NODE_ENV=development node server"
   },
   "dependencies": {
     "react": "16.4.1",
-    "react-dom": "16.4.1",
+    "react-dom": "16.4.1"
   }
 }
