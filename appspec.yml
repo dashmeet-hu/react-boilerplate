@@ -17,6 +17,6 @@ permissions:
       - "d:u::rwx"
       - "d:g::rwx"
       - "d:o::rwx"
-    owner: ec2-user
+    owner: ubuntu
     type:
       - directory
