@@ -10,3 +10,13 @@ hooks:
   ApplicationStart:
     - location: codeDeployScripts/start_node_application.sh
       runas: ubuntu
+permissions:
+  - object: /var/www/html/ustraa
+    mode: 644
+    acls:
+      - "d:u::rwx"
+      - "d:g::rwx"
+      - "d:o::rwx"
+    owner: ec2-user
+    type:
+      - directory
