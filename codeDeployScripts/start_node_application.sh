@@ -9,6 +9,7 @@ rm -rf yarn.lock
 #nvm use 8.11.3
 npm install
 echo $USER
+ls
 ll -a
 pm2 start ustraa
 #exit
