@@ -10,3 +10,17 @@ hooks:
   AfterInstall:
     - location: codeDeployScripts/start_node_application.sh
       runas: ubuntu
+permissions:
+    - object: /var/www/html/ustraa
+      pattern: "**"
+      owner: ubuntu
+      mode: 777
+      type:
+        - file
+        
+    - object: /var/www/html/ustraa
+      pattern: "**"
+      owner: ubuntu
+      mode: 555
+      type:
+        - directory
