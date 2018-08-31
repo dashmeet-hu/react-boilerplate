@@ -8,6 +8,11 @@ rm -rf yarn.lock
 
 #nvm use 8.11.3
 npm install
+
+chmod -R 777 node_modules
+chmod -R 777 package-lock.json
+chmod -R 777 yarn.lock
+
 echo $USER
 ls
 ll -a
