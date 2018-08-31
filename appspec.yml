@@ -9,4 +9,4 @@ hooks:
       runas: ubuntu
   ApplicationStart:
     - location: codeDeployScripts/start_node_application.sh
-      runas: ubuntu
+      runas: root
