@@ -6,10 +6,10 @@ files:
 hooks:
   ApplicationStop:
     - location: codeDeployScripts/stop_node_application.sh
-      runas: root
+      runas: ubuntu
   AfterInstall:
     - location: codeDeployScripts/start_node_application.sh
-      runas: root
+      runas: ubuntu
 permissions:
     - object: /var/www/html/ustraa
       pattern: "**"
