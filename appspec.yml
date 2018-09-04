@@ -8,6 +8,8 @@ hooks:
     - location: codeDeployScripts/stop_node_application.sh
       runas: ubuntu
   AfterInstall:
+    - location: codeDeplyScripts/before_start_node_application.sh
+      runas: root
     - location: codeDeployScripts/start_node_application.sh
       runas: ubuntu
 permissions:
