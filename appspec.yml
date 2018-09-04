@@ -14,13 +14,15 @@ permissions:
     - object: /var/www/html/ustraa
       pattern: "**"
       owner: ubuntu
-      mode: 777
+      group: ubuntu
+      mode: 644
       type:
         - file
         
     - object: /var/www/html/ustraa
       pattern: "**"
       owner: ubuntu
-      mode: 777
+      group: ubuntu
+      mode: 755
       type:
         - directory
