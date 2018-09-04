@@ -7,7 +7,7 @@ cd /var/www/html/ustraa
 #chmod -R 777 package-lock.json
 #chmod -R 777 yarn.lock
 
-rm -rf node_modules
+#rm -rf node_modules
 rm -rf package-lock.json
 rm -rf yarn.lock
 
