@@ -12,8 +12,8 @@ rm -rf package-lock.json
 #rm -rf yarn.lock
 
 #nvm use 8.11.3
-sudo npm install
-sudo chown -R ubuntu:ubuntu ./node_modules
+npm install
+#chown -R ubuntu:ubuntu ./node_modules
 
 pm2 start ustraa
 #exit
