@@ -1,8 +1,9 @@
 #!/bin/bash
 
 #sudo su
-cd /var/www/html/ustraa
+cd /mnt/hu_ustraa
 
+pm2 stop all
 #chmod -R 777 node_modules
 #chmod -R 777 package-lock.json
 #chmod -R 777 yarn.lock
@@ -15,5 +16,7 @@ rm -rf package-lock.json
 npm install
 #chown -R ubuntu:ubuntu ./node_modules
 
-pm2 start ustraa
+cd /mnt
+pm2 delete pm2.ecosystem.config.js
+pm2 start pm2.ecosystem.config.js
 #exit
