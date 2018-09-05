@@ -9,6 +9,7 @@ pm2 stop all
 #chmod -R 777 yarn.lock
 
 #rm -rf node_modules
+chown -R ubuntu:ubuntu .
 rm -rf package-lock.json
 #rm -rf yarn.lock
 
