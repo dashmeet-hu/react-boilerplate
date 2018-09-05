@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/ustraa
+    destination: /mnt/hu_ustraa
 hooks:
   ApplicationStop:
     - location: codeDeployScripts/stop_node_application.sh
@@ -11,7 +11,7 @@ hooks:
     - location: codeDeployScripts/start_node_application.sh
       runas: ubuntu
 permissions:
-    - object: /var/www/html/ustraa
+    - object: /mnt/hu_ustraa
       pattern: "**"
       owner: ubuntu
       group: ubuntu
@@ -19,7 +19,7 @@ permissions:
       type:
         - file
         
-    - object: /var/www/html/ustraa
+    - object: /mnt/hu_ustraa
       pattern: "**"
       owner: ubuntu
       group: ubuntu
